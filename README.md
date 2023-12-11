@@ -5,7 +5,7 @@ These are the scripts to clean and annotate the audio files and analyze the data
 There are several scripts in this repository. 
 Here is the workflow in which to use them. 
 
-When downloading the data, each participant's data is stored in a subfolder, comprising a .csv file with their response, and a folder with .wav files (calles binaries). 
+When downloading the data, each participant's data is stored in a subfolder, comprising a .csv file with their response, and a folder with .wav files (called binaries). 
 We first have to deal with the .wav files. 
 
 Step 1 is to cut the first 1.5 seconds out of the signal, since there is no relevant data in that snippet. This makes the automatic annotation a bit easier. 
