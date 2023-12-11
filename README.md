@@ -13,6 +13,7 @@ Step 1 is to cut the first 1.5 seconds out of the signal, since there is no rele
 That is what the cut_files.py script does. Simply paste the nae of the subfolder you are working on into the folderpath variable. This script creates a folder in the binaries folder called "cut_stimuli" and stores the cut files in there. 
 
 We can then paste the path to the cut_stimuli subfolder into the annotation R script (Vot_script). That script is literally 2 lines of code. 4 if you want to optimize the parameters first. 
+The annotation script uses the getVOT library created by Rasmus Puggaard-Rode. More information about the package can be found here: https://github.com/rpuggaardrode/getVOT 
 
 The next step is to loop thorugh the TextGrids and create a .csv file with the intervalls of interest. We then merge that file with the participant response data and create one df we can work with that is what the VOTannotation.py script does. Again, simply paste the folder you are working on into the folderpath variable. 
 
